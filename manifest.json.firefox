@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_Copy_This_Block__",
+  "version": "0.9.0",
+  "description": "__MSG_extensionDescription__",
+  "homepage_url": "https://github.com/uenoB/copy_this_block",
+  "default_locale": "en",
+  "icons": {
+    "48": "/images/icon.svg"
+  },
+  "background": {
+    "scripts": ["/background.js"]
+  },
+  "commands": {
+    "copy_this_block": {
+      "suggested_key": {
+        "default": "Alt+Shift+C"
+      },
+      "description": "__MSG_Copy_This_Block__"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "clipboardWrite"
+  ],
+  "optional_permissions": [
+    "<all_urls>"
+  ]
+}

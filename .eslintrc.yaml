@@ -1,0 +1,74 @@
+extends:
+  - "eslint:recommended"
+env:
+  browser: true
+  es6: true
+globals:
+  chrome: false
+  exports: true
+rules:
+  no-console: "warn"
+  no-extra-parens:
+    - "error"
+    - "all"
+    - conditionalAssign: false
+      nestedBinaryExpressions: false
+  block-scoped-var: "error"
+  curly: ["error", "multi"]
+  default-case: "error"
+  eqeqeq: ["error", "always", {null: "ignore"}]
+  no-caller: "error"
+  no-eval: "error"
+  no-extra-label: "error"
+  no-floating-decimal: "error"
+  no-multi-spaces: "error"
+  no-self-compare: "error"
+  no-unmodified-loop-condition: "error"
+  no-unused-expressions: "error"
+  no-useless-call: "error"
+  no-useless-concat: "error"
+  no-useless-return: "error"
+  yoda: "error"
+  strict: ["error", "global"]
+  no-label-var: "error"
+  no-use-before-define: ["error", "nofunc"]
+  array-bracket-spacing: "error"
+  block-spacing: "error"
+  brace-style: ["error", "1tbs", {allowSingleLine: true}]
+  camelcase: "error"
+  comma-dangle: "error"
+  comma-style: "error"
+  computed-property-spacing: "error"
+  eol-last: "error"
+  func-call-spacing: "error"
+  indent:
+    - "error"
+    - 2
+    - VariableDeclarator: 2
+      outerIIFEBody: 0
+      flatTernaryExpressions: true
+  key-spacing: "error"
+  keyword-spacing: "error"
+  linebreak-style: "error"
+  no-multiple-empty-lines: "warn"
+  no-tabs: "error"
+  no-trailing-spaces: "error"
+  object-curly-newline: "error"
+  object-curly-spacing: "error"
+  operator-linebreak: ["error", "after"]
+  quotes: ["error", "single", {"avoidEscape": true}]
+  semi: "error"
+  semi-spacing: ["error", {before: false, after: true}]
+  semi-style: "error"
+  space-before-blocks: "error"
+  space-before-function-paren: ["error", "never"]
+  space-in-parens: "error"
+  switch-colon-spacing: "error"
+  unicode-bom: "error"
+  arrow-body-style: ["error", "as-needed"]
+  arrow-parens: ["error", "as-needed"]
+  arrow-spacing: "error"
+  no-useless-computed-key: "error"
+  prefer-arrow-callback: "error"
+  prefer-spread: "error"
+  rest-spread-spacing: "error"
