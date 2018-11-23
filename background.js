@@ -22,7 +22,7 @@
  */
 'use strict';
 
-chrome.runtime.onInstalled.addListener(() => {
+chrome.runtime.onStartup.addListener(() => {
   chrome.contextMenus.create({
     id: 'copy-this-block',
     title: chrome.i18n.getMessage('Copy_This_Block'),
