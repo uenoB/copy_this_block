@@ -22,13 +22,16 @@
  */
 'use strict';
 
-chrome.runtime.onStartup.addListener(() => {
+function init() {
   chrome.contextMenus.create({
     id: 'copy-this-block',
     title: chrome.i18n.getMessage('Copy_This_Block'),
     contexts: ['selection']
   });
-});
+}
+
+chrome.runtime.onStartup.addListener(init);
+chrome.runtime.onInstalled.addListener(init);
 
 function copyThisBlock(info, tab) {
   function start() {
